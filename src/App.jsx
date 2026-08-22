@@ -2,6 +2,8 @@ import StarField from './components/StarField'
 import Navbar from './components/Navbar'
 import MoonIndicator from './components/MoonIndicator'
 import Hero from './sections/Hero'
+import About from './sections/About'
+import Projects from './sections/Projects'
 
 function App() {
   return (
@@ -10,10 +12,11 @@ function App() {
       <Navbar />
       <MoonIndicator />
       <Hero />
+      <About />
+      <Projects />
 
-      {/* temporary tall section just to test scrolling/parallax */}
-      <div className="h-[150vh] flex items-center justify-center">
-        <p className="text-muted">Scroll test area — will be replaced by real sections</p>
+      <div className="h-[100vh] flex items-center justify-center">
+        <p className="text-muted">More sections coming...</p>
       </div>
     </div>
   )
