@@ -6,6 +6,7 @@ import About from './sections/About'
 import Projects from './sections/Projects'
 import Skills from './sections/Skills'
 import Journey from './sections/Journey'
+import SideQuests from './sections/SideQuests'
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       <Projects />
       <Skills />
       <Journey />
+      <SideQuests/>
 
       <div className="h-[100vh] flex items-center justify-center">
         <p className="text-muted">More sections coming...</p>

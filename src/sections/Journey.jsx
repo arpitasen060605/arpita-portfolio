@@ -52,8 +52,8 @@ function Journey() {
   return (
     <section id="journey" ref={sectionRef} className="relative min-h-screen py-24 px-6 md:px-16">
       <div className="max-w-3xl mx-auto">
-        <p className="font-accent text-3xl text-soft-pink mb-1">my journey</p>
-        <h2 className="font-display text-5xl text-off-white mb-16">so far</h2>
+        <p className="font-accent text-3xl text-soft-pink mb-1">My journey</p>
+        <h2 className="font-display text-5xl text-off-white mb-16">so far..</h2>
 
         <div className="relative pl-12">
           {/* static track line (faint, full height) */}

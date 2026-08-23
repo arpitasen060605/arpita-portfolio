@@ -27,7 +27,7 @@ function Hero() {
     <section id="home" className="relative min-h-screen flex items-center overflow-hidden px-6 md:px-16">
       {/* Moon with glow, parallaxes slower than scroll */}
       <div
-        className="absolute right-[-100px] top-1/2 -translate-y-1/2 w-[550px] h-[550px] md:w-[650px] md:h-[650px]"
+        className="absolute right-[-100px] top-1/2 -translate-y-1/2 w-[600px] h-[600px] md:w-[700px] md:h-[700px]"
         style={{ transform: `translateY(calc(-50% + ${scrollY * 0.15}px))` }}
       >
         <div className="absolute inset-0 rounded-full bg-lavender/30 blur-[100px]" />
