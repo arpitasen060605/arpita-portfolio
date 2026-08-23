@@ -10,6 +10,7 @@ import Journey from './sections/Journey'
 import SideQuests from './sections/SideQuests'
 import Milestones from './sections/Milestones'
 import Contact from './sections/Contact'
+import CursorGlow from './components/CursorGlow'
 
 function App() {
   return (
@@ -26,6 +27,9 @@ function App() {
       <Milestones />
       <Contact />
       <Footer />
+      <StarField />
+      <CursorGlow />
+      <Navbar />
     </div>
   )
 }
