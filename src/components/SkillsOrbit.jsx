@@ -93,6 +93,16 @@ function OrbitRing({ ringSkills, rx, ry, speed, reverse, hovered, setHovered }) 
 
 function SkillsOrbit() {
   const [hovered, setHovered] = useState(null)
+  const [isMobile, setIsMobile] = useState(false)
+
+useEffect(() => {
+  function checkWidth() {
+    setIsMobile(window.innerWidth < 640)
+  }
+  checkWidth()
+  window.addEventListener('resize', checkWidth)
+  return () => window.removeEventListener('resize', checkWidth)
+}, [])
   const ring1 = skills.filter((s) => s.ring === 1)
   const ring2 = skills.filter((s) => s.ring === 2)
 
@@ -111,9 +121,9 @@ function SkillsOrbit() {
 </div>
 
     <div className="absolute inset-0" style={{ transform: 'rotate(-12deg)' }}>
-      <OrbitRing ringSkills={ring1} rx={220} ry={100} speed={9} reverse={false} hovered={hovered} setHovered={setHovered} />
-      <OrbitRing ringSkills={ring2} rx={380} ry={165} speed={6} reverse={true} hovered={hovered} setHovered={setHovered} />
-    </div>
+  <OrbitRing ringSkills={ring1} rx={isMobile ? 130 : 220} ry={isMobile ? 60 : 100} speed={9} reverse={false} hovered={hovered} setHovered={setHovered} />
+  <OrbitRing ringSkills={ring2} rx={isMobile ? 165 : 380} ry={isMobile ? 90 : 165} speed={6} reverse={true} hovered={hovered} setHovered={setHovered} />
+</div>
   </div>
 )
 }

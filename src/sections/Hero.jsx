@@ -27,9 +27,9 @@ function Hero() {
     <section id="home" className="relative min-h-screen flex items-center overflow-hidden px-6 md:px-16">
       {/* Moon with glow, parallaxes slower than scroll */}
       <div
-        className="absolute right-[-100px] top-1/2 -translate-y-1/2 w-[600px] h-[600px] md:w-[700px] md:h-[700px]"
-        style={{ transform: `translateY(calc(-50% + ${scrollY * 0.15}px))` }}
-      >
+  className="absolute right-[-90px] top-20 md:top-1/2 md:-translate-y-1/2 w-[180px] h-[180px] md:w-[650px] md:h-[650px] opacity-30 md:opacity-100"
+  style={{ transform: window.innerWidth < 768 ? 'none' : `translateY(calc(-50% + ${scrollY * 0.15}px))` }}
+>
         <div className="absolute inset-0 rounded-full bg-lavender/30 blur-[100px]" />
         <img
           src={moon}

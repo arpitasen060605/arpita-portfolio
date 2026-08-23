@@ -71,7 +71,7 @@ function Journey() {
           <div className="flex flex-col gap-16">
             {milestones.map((milestone, i) => (
               <div
-                key={milestone.year}
+               key={milestone.year + milestone.title}
                 ref={(el) => (itemRefs.current[i] = el)}
                 className="relative"
               >
