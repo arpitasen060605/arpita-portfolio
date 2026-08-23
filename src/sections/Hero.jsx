@@ -52,9 +52,9 @@ function Hero() {
           I build things at the intersection of technology and curiosity.
         </p>
         <div className="flex gap-4 flex-wrap">
-          <GlowButton variant="primary">Explore My Universe →</GlowButton>
-          <GlowButton variant="secondary">View My Projects</GlowButton>
-        </div>
+  <a href="#about"><GlowButton variant="primary">Explore My Universe →</GlowButton></a>
+  <a href="#projects"><GlowButton variant="secondary">View My Projects</GlowButton></a>
+</div>
       </div>
     </section>
   )
