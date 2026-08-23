@@ -1,6 +1,7 @@
 import StarField from './components/StarField'
 import Navbar from './components/Navbar'
 import MoonIndicator from './components/MoonIndicator'
+import Footer from './components/Footer'
 import Hero from './sections/Hero'
 import About from './sections/About'
 import Projects from './sections/Projects'
@@ -8,6 +9,7 @@ import Skills from './sections/Skills'
 import Journey from './sections/Journey'
 import SideQuests from './sections/SideQuests'
 import Milestones from './sections/Milestones'
+import Contact from './sections/Contact'
 
 function App() {
   return (
@@ -20,12 +22,10 @@ function App() {
       <Projects />
       <Skills />
       <Journey />
-      <SideQuests/>
-      <Milestones/>
-
-      <div className="h-[100vh] flex items-center justify-center">
-        <p className="text-muted">More sections coming...</p>
-      </div>
+      <SideQuests />
+      <Milestones />
+      <Contact />
+      <Footer />
     </div>
   )
 }
