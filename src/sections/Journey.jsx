@@ -2,6 +2,7 @@ import { useEffect, useRef } from 'react'
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import { milestones } from '../data/journey'
+import FadeIn from '../components/FadeIn'
 
 gsap.registerPlugin(ScrollTrigger)
 
@@ -52,9 +53,10 @@ function Journey() {
   return (
     <section id="journey" ref={sectionRef} className="relative min-h-screen py-24 px-6 md:px-16">
       <div className="max-w-3xl mx-auto">
+        <FadeIn>
         <p className="font-accent text-3xl text-soft-pink mb-1">My journey</p>
         <h2 className="font-display text-5xl text-off-white mb-16">so far..</h2>
-
+        </FadeIn>
         <div className="relative pl-12">
           {/* static track line (faint, full height) */}
           <div className="absolute left-4 top-0 bottom-0 w-px bg-lavender/15" />
