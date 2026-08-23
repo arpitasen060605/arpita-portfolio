@@ -53,7 +53,7 @@ function About() {
             <p className="font-accent text-3xl text-soft-pink mb-1">A little bit</p>
             <h2 className="font-display text-5xl text-off-white mb-6">About me</h2>
             </FadeIn>
-            
+
             <p className="text-off-white/70 mb-4 leading-relaxed">
               I'm a Computer Science student with a strong curiosity for cybersecurity and a genuine love for building things. What started as an interest in understanding how networks and systems work has grown into one of the areas I'm most passionate about.
             </p>
@@ -73,7 +73,7 @@ function About() {
               <div className="absolute inset-0 rounded-full bg-lavender/20 blur-3xl" />
               <img
                 src={profile}
-                alt="Arpita Sen"
+                alt="Photo of Arpita Sen"
                 className="relative w-full h-full object-cover rounded-full border-2 border-lavender/40"
               />
             </div>
